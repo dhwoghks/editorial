@@ -1,6 +1,7 @@
 import Header from '/components/Header.js'
 import Sidebar from '/components/Sidebar.js'
 import Image from 'next/image'
+import Script from 'next/script'
 
 const Index = () => {
     return (
@@ -29,8 +30,15 @@ const Index = () => {
                                     <li><a href="#" className="button big">Learn More</a></li>
                                 </ul>
                             </div>
-                            <span className="image object">
-                                <Image src="/images/pic10.jpg" alt="" layout="fill" objectFit="cover" />
+                            <span className="image object" style={{ position: 'relative', minHeight: '500px' }}>
+                                <Image 
+                                    src="/images/pic10.jpg" 
+                                    alt="" 
+                                    fill={true}
+                                    priority={true}
+                                    sizes="(max-width: 736px) 100vw, 40vw"
+                                    style={{ objectFit: 'cover' }}
+                                />
                             </span>
                         </section>
 
@@ -78,7 +86,15 @@ const Index = () => {
                             </header>
                             <div className="posts">
                                 <article>
-                                    <a href="#" className="image"><Image src="/images/pic01.jpg" alt="" layout="fill" objectFit="cover" /></a>
+                                    <a href="#" className="image" style={{ position: 'relative', minHeight: '300px' }}>
+                                        <Image 
+                                            src="/images/pic01.jpg" 
+                                            alt="" 
+                                            fill={true}
+                                            sizes="(max-width: 736px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                                            style={{ objectFit: 'cover' }}
+                                        />
+                                    </a>
                                     <h3>Interdum aenean</h3>
                                     <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
                                     <ul className="actions">
@@ -86,7 +102,15 @@ const Index = () => {
                                     </ul>
                                 </article>
                                 <article>
-                                    <a href="#" className="image"><Image src="/images/pic02.jpg" alt="" layout="fill" objectFit="cover" /></a>
+                                    <a href="#" className="image" style={{ position: 'relative', minHeight: '300px' }}>
+                                        <Image 
+                                            src="/images/pic02.jpg" 
+                                            alt="" 
+                                            fill={true}
+                                            sizes="(max-width: 736px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                                            style={{ objectFit: 'cover' }}
+                                        />
+                                    </a>
                                     <h3>Nulla amet dolore</h3>
                                     <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
                                     <ul className="actions">
@@ -94,7 +118,15 @@ const Index = () => {
                                     </ul>
                                 </article>
                                 <article>
-                                    <a href="#" className="image"><Image src="/images/pic03.jpg" alt="" layout="fill" objectFit="cover" /></a>
+                                    <a href="#" className="image" style={{ position: 'relative', minHeight: '300px' }}>
+                                        <Image 
+                                            src="/images/pic03.jpg" 
+                                            alt="" 
+                                            fill={true}
+                                            sizes="(max-width: 736px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                                            style={{ objectFit: 'cover' }}
+                                        />
+                                    </a>
                                     <h3>Tempus ullamcorper</h3>
                                     <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
                                     <ul className="actions">
@@ -102,7 +134,15 @@ const Index = () => {
                                     </ul>
                                 </article>
                                 <article>
-                                    <a href="#" className="image"><Image src="/images/pic04.jpg" alt="" layout="fill" objectFit="cover" /></a>
+                                    <a href="#" className="image" style={{ position: 'relative', minHeight: '300px' }}>
+                                        <Image 
+                                            src="/images/pic04.jpg" 
+                                            alt="" 
+                                            fill={true}
+                                            sizes="(max-width: 736px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                                            style={{ objectFit: 'cover' }}
+                                        />
+                                    </a>
                                     <h3>Sed etiam facilis</h3>
                                     <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
                                     <ul className="actions">
@@ -110,7 +150,15 @@ const Index = () => {
                                     </ul>
                                 </article>
                                 <article>
-                                    <a href="#" className="image"><Image src="/images/pic05.jpg" alt="" layout="fill" objectFit="cover" /></a>
+                                    <a href="#" className="image" style={{ position: 'relative', minHeight: '300px' }}>
+                                        <Image 
+                                            src="/images/pic05.jpg" 
+                                            alt="" 
+                                            fill={true}
+                                            sizes="(max-width: 736px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                                            style={{ objectFit: 'cover' }}
+                                        />
+                                    </a>
                                     <h3>Feugiat lorem aenean</h3>
                                     <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
                                     <ul className="actions">
@@ -118,7 +166,15 @@ const Index = () => {
                                     </ul>
                                 </article>
                                 <article>
-                                    <a href="#" className="image"><Image src="/images/pic06.jpg" alt="" layout="fill" objectFit="cover" /></a>
+                                    <a href="#" className="image" style={{ position: 'relative', minHeight: '300px' }}>
+                                        <Image 
+                                            src="/images/pic06.jpg" 
+                                            alt="" 
+                                            fill={true}
+                                            sizes="(max-width: 736px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                                            style={{ objectFit: 'cover' }}
+                                        />
+                                    </a>
                                     <h3>Amet varius aliquam</h3>
                                     <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
                                     <ul className="actions">
@@ -136,12 +192,12 @@ const Index = () => {
 
             </div>
 
-            {/* <!-- Scripts --> */}
-            <script src="assets/js/jquery.min.js" async></script>
-            <script src="assets/js/browser.min.js" async></script>
-            <script src="assets/js/breakpoints.min.js" async></script>
-            <script src="assets/js/util.js" async></script>
-            <script src="assets/js/main.js" async></script>
+            {/* Scripts */}
+            <Script src="/assets/js/jquery.min.js" strategy="beforeInteractive" />
+            <Script src="/assets/js/browser.min.js" strategy="afterInteractive" />
+            <Script src="/assets/js/breakpoints.min.js" strategy="afterInteractive" />
+            <Script src="/assets/js/util.js" strategy="afterInteractive" />
+            <Script src="/assets/js/main.js" strategy="afterInteractive" />
 
         </div>
     );

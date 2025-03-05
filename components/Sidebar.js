@@ -53,15 +53,39 @@ const Sidebar = () => {
 									</header>
 									<div className="mini-posts">
 										<article>
-											{/* <a href="#" className="image"><Image src="/images/pic07.jpg" alt="" layout="fill" objectFit="cover"/></a> */}
+											<a href="#" className="image" style={{ position: 'relative', minHeight: '200px' }}>
+												<Image 
+													src="/images/pic07.jpg" 
+													alt="" 
+													fill={true} 
+													sizes="(max-width: 736px) 100vw, 25vw"
+													style={{ objectFit: 'cover' }}
+												/>
+											</a>
 											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
 										</article>
 										<article>
-											{/* <a href="#" className="image"><Image src="/images/pic08.jpg" alt="" layout="fill" objectFit="cover"/></a> */}
+											<a href="#" className="image" style={{ position: 'relative', minHeight: '200px' }}>
+												<Image 
+													src="/images/pic08.jpg" 
+													alt="" 
+													fill={true} 
+													sizes="(max-width: 736px) 100vw, 25vw"
+													style={{ objectFit: 'cover' }}
+												/>
+											</a>
 											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
 										</article>
 										<article>
-											{/* <a href="#" className="image"><Image src="/images/pic09.jpg" alt="" layout="fill" objectFit="cover"/></a> */}
+											<a href="#" className="image" style={{ position: 'relative', minHeight: '200px' }}>
+												<Image 
+													src="/images/pic09.jpg" 
+													alt="" 
+													fill={true} 
+													sizes="(max-width: 736px) 100vw, 25vw"
+													style={{ objectFit: 'cover' }}
+												/>
+											</a>
 											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
 										</article>
 									</div>
