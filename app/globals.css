@@ -2271,3 +2271,35 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+
+@media screen and (min-width: 1281px) {
+    #sidebar {
+        width: 26em;
+        position: relative; /* 위치 유지 */
+    }
+    
+    #sidebar > .inner {
+        padding: 2.22222em 2.22222em 2.44444em 2.22222em;
+        width: 26em;
+        height: 100vh; /* 뷰포트 높이만큼 */
+        overflow-y: auto; /* 스크롤 가능하게 */
+        overflow-x: hidden; /* 좌우 스크롤 제거 */
+        position: fixed; /* 고정 */
+    }
+
+    /* 스크롤바 숨기기 */
+    #sidebar > .inner::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* footer 아래 공백 제거 */
+    #sidebar > .inner > *:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    #sidebar #footer {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+}
