@@ -1,26 +1,19 @@
 import React from 'react';
-import Index from '/components/Index'; // 헤더 임포트
-import Header from '/components/Header.js'
-import Sidebar from '/components/Sidebar.js'
 import Image from 'next/image'
-import Script from 'next/script'
+// Header, Sidebar, Script import 제거
 
 export default function Home(){
   return (
-    <div className="is-preload">
+    // <div className="is-preload"> 제거
+    // <div id="wrapper"> 제거
+    // <div id="main"> 제거
+    // <div className="inner"> 제거
+    // <Header></Header> 제거
 
-            {/* <!-- Wrapper --> */}
-            <div id="wrapper">
-
-                {/* <!-- Main --> */}
-                <div id="main">
-                    <div className="inner">
-
-                        {/* <!-- Header --> */}
-                        <Header></Header>
-
-                        {/* <!-- Banner --> */}
-                        <section id="banner">
+    // 콘텐츠만 남김
+    <>
+      {/* <!-- Banner --> */}
+      <section id="banner">
                             <div className="content">
                                 <header>
                                     <h1>안녕하세요! 오재환입니다.<br />
@@ -42,10 +35,10 @@ export default function Home(){
                                     style={{ objectFit: 'cover' }}
                                 />
                             </span>
-                        </section>
+      </section>
 
-                        {/* <!-- Section --> */}
-                        <section>
+      {/* <!-- Section --> */}
+      <section>
                             <header className="major">
                                 <h2>Erat lacinia</h2>
                             </header>
@@ -185,22 +178,12 @@ export default function Home(){
                                 </article>
                             </div>
                         </section>
-
-                    </div>
-                </div>
-
-                {/* <!-- Sidebar --> */}
-                <Sidebar/>
-
-            </div>
-
-            {/* Scripts */}
-            <Script src="/assets/js/jquery.min.js" strategy="afterInteractive" />
-            <Script src="/assets/js/browser.min.js" strategy="afterInteractive" />
-            <Script src="/assets/js/breakpoints.min.js" strategy="afterInteractive" />
-            <Script src="/assets/js/util.js" strategy="afterInteractive" />
-            <Script src="/assets/js/main.js" strategy="afterInteractive" />
-
-        </div>
+    </>
+    // </div> (inner) 제거
+    // </div> (main) 제거
+    // <Sidebar/> 제거
+    // </div> (wrapper) 제거
+    // Script 태그들 제거
+    // </div> (is-preload) 제거
   )
 }

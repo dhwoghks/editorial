@@ -1,6 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "../public/css/main.css";
 import "./globals.css";
+import Header from '/components/Header.js';
+import Sidebar from '/components/Sidebar.js';
+import Script from 'next/script';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,7 +24,31 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <div className="is-preload">
+          {/* Wrapper */}
+          <div id="wrapper">
+            {/* Main */}
+            <div id="main">
+              <div className="inner">
+                {/* Header */}
+                <Header />
+                
+                {/* Page Content */}
+                {children}
+              </div>
+            </div>
+
+            {/* Sidebar */}
+            <Sidebar />
+          </div>
+
+          {/* Scripts */}
+          <Script src="/assets/js/jquery.min.js" strategy="afterInteractive" />
+          <Script src="/assets/js/browser.min.js" strategy="afterInteractive" />
+          <Script src="/assets/js/breakpoints.min.js" strategy="afterInteractive" />
+          <Script src="/assets/js/util.js" strategy="afterInteractive" />
+          <Script src="/assets/js/main.js" strategy="afterInteractive" />
+        </div>
       </body>
     </html>
   );
