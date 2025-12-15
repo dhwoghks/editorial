@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image'
 // Header, Sidebar, Script import 제거
-
+import SpinningCube from '/components/spinningCube.js'
 export default function Home(){
   return (
     // <div className="is-preload"> 제거
@@ -42,6 +42,7 @@ export default function Home(){
                             <header className="major">
                                 <h2>Erat lacinia</h2>
                             </header>
+                            <div><SpinningCube /></div>
                             <div className="features">
                                 <article>
                                     <span className="icon fa-gem"></span>
