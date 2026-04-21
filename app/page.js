@@ -12,7 +12,7 @@ export default async function Home(){
     // <div id="main"> 제거
     // <div className="inner"> 제거
     // <Header></Header> 제거
-
+    //테스트용 주석
     // 콘텐츠만 남김
     <>
       {/* <!-- Banner --> */}
