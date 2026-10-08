@@ -1,5 +1,5 @@
 import React from 'react';
-import Elements from '/components/Elements'; // 헤더 임포트
+import Elements from '/components/elements'; // 헤더 임포트
 
 export default function ElementsPage() {
     return (
