@@ -22,8 +22,8 @@ export async function POST(request) {
     contents,
   });
 
-  return NextResponse.redirect(
-    new URL("/board/list", request.url),
-    { status: 302 }
-  );
+  return new NextResponse(null, {
+    status: 303,
+    headers: { Location: "/board/list" },
+  });
 }
