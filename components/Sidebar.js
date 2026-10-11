@@ -22,12 +22,12 @@ const Sidebar = () => {
 										<li><a href="/generic">Generic</a></li>
 										<li><a href="/elements">Elements</a></li>
 										<li>
-											<span className="opener">Submenu</span>
+											<span className="opener">board</span>
 											<ul>
-												<li><a href="#">Lorem Dolor</a></li>
-												<li><a href="#">Ipsum Adipiscing</a></li>
-												<li><a href="#">Tempus Magna</a></li>
-												<li><a href="#">Feugiat Veroeros</a></li>
+												<li><a href="/board/list">list board</a></li>
+												<li><a href="/board/write">write board</a></li>
+												<li><a href="/board/edit">Edit board</a></li>
+												<li><a href="/board/detail">Detail board</a></li>
 											</ul>
 										</li>
 										<li><a href="#">Etiam Dolore</a></li>
