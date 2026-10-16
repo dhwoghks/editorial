@@ -46,7 +46,9 @@ export default async function Home(){
                             <header className="major">
                                 <h2>Erat lacinia</h2>
                             </header>
-                            <div><SpinningCube /></div>
+                            <div style={{ marginBottom: '4rem' }}>
+                                <SpinningCube />
+                            </div>
                             <div className="features">
                                 <article>
                                     <span className="icon fa-gem"></span>
