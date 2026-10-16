@@ -29,8 +29,12 @@ export async function POST(request) {
         }
     );
 
-    return NextResponse.redirect(
-        new URL("/board/list", request.url),
-        { status: 302 }
-    );
+    // return NextResponse.redirect(
+    //     new URL("/board/list", request.url),
+    //     { status: 302 }
+    // );
+    return new NextResponse(null, {
+            status: 302,
+            headers: { Location: "/board/list" },
+    });
 }
