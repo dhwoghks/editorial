@@ -1,6 +1,8 @@
 export async function GET() {
     const date = new Date();
-    return Response.json(date.toLocaleString('ko-kr'), {
+    return Response.json(date.toLocaleString('ko-KR', {
+        timeZone: 'Asia/Seoul',
+    }), {
         status: 200,
     });
 }
